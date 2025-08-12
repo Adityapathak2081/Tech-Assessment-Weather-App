@@ -9,7 +9,7 @@ db = mysql.connector.connect(
 cursor = db.cursor()
 
 cursor.execute("CREATE DATABASE IF NOT EXISTS weather_app")
-print("✅ Database 'weather_app' created or already exists.")
+print(" Database 'weather_app' created or already exists.")
 cursor.execute("USE weather_app")
 
 cursor.execute("""
@@ -26,7 +26,8 @@ CREATE TABLE IF NOT EXISTS weather_data (
     description VARCHAR(100),
     date_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP)
     """)
-print("✅ Table 'weather_data' created or already exists.")
+print(" Table 'weather_data' created or already exists.")
 
 db.close()
+
 
