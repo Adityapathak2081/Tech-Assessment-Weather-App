@@ -2,7 +2,7 @@ import requests
 import mysql.connector
 from datetime import datetime
 
-API_KEY = "474910e127be904d06254ebb9480ffe5" 
+API_KEY = "474910e127be904d06254ebb9480ffe5xbuasnabc" 
 BASE_URL = "https://api.openweathermap.org/data/2.5/"
 DB_CONFIG = {
     "host": "localhost",
@@ -74,3 +74,4 @@ if data:
 cursor.close()
 
 db.close()
+
