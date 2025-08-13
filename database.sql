@@ -1,4 +1,3 @@
-
 mysql> CREATE DATABASE weather_app;
 ERROR 1007 (HY000): Can't create database 'weather_app'; database exists
 
