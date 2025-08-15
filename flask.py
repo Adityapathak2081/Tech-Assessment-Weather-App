@@ -23,7 +23,7 @@ APP_AUTHOR = "Aditya Pathak"
 PM_ACCELERATOR_DESCRIPTION = """
 The Product Manager Accelerator Program is designed to support PM professionals through every stage of their careers.
 From students looking for entry-level jobs to Directors seeking leadership roles, our program empowers PMs at all levels.
-Learn more at: <a href="https://www.linkedin.com/company/product-manager-accelerator" target="_blank">Visit LinkedIn</a>
+Learn more at: <a href="https://es.linkedin.com/company/pm-accelerator" target="_blank">Visit LinkedIn</a>
 """
 
 db = mysql.connector.connect(**DB_CONFIG)
@@ -92,4 +92,5 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
