@@ -3,22 +3,19 @@ import requests
 import mysql.connector
 from datetime import datetime
 
-# ====== FLASK APP ======
 app = Flask(__name__)
 
-# ====== CUSTOM JINJA FILTER ======
 @app.template_filter('datetimeformat')
 def datetimeformat(value):
     """Convert a Unix timestamp to YYYY-MM-DD HH:MM format."""
     return datetime.fromtimestamp(value).strftime("%Y-%m-%d %H:%M")
-
-# ====== CONFIG ======
+    
 API_KEY = "474910e127be904d06254ebb9480ffe5"  # Replace with your OpenWeather API key
 BASE_URL = "https://api.openweathermap.org/data/2.5/"
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "password",  # Replace with your MySQL root password
+    "password": "password",  
     "database": "weather_app"
 }
 
@@ -29,7 +26,6 @@ From students looking for entry-level jobs to Directors seeking leadership roles
 Learn more at: <a href="https://www.linkedin.com/company/product-manager-accelerator" target="_blank">Visit LinkedIn</a>
 """
 
-# ====== CONNECT TO MYSQL ======
 db = mysql.connector.connect(**DB_CONFIG)
 cursor = db.cursor()
 
@@ -96,3 +92,4 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
