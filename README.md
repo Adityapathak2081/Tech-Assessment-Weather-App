@@ -13,3 +13,7 @@ This project has a few code components in it.
      c) Displays the weather details on the screen.
      d) Saves the data into the MySQL database.
    This file will be used for giving input and user interation.
+
+3) flask.py - I've used flask framework for the frontend, This Flask web application allows users to search for weather information and view a 5-day forecast for any location. It also integrates the Info button for displaying details of PM Accelerator, along with storing all fetched weather data in a MySQL database for record-keeping.
+
+
